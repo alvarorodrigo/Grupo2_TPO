@@ -22,29 +22,52 @@
     </header>
     <main>
         <div id="div_ind">
-            <h1>Contáctenos</h1>
-        
+            <h1>CONTACTO</h1>
+
+            <div class="form">
             <form id=form action="show_data.html" target="_blank">
-                <label for="first_lastname">NOMBRE Y APELLIDO: </label><input type="text" name="first_lastname">
-                <label for="tel">TELEFONO: </label><input type="tel" name="tel"><br><br>
-                <label for="city">CIUDAD: </label><input type="text" name="city"><br><br>
-                <label for="email">E-MAIL: </label><input type="email" name="email"><br><br>
-                <label for="comentarios">MENSAJE:<br></label><textarea name="comentarios" rows="10" cols="60"></textarea><br>
-                <input type="submit" value="Enviar">
-                <button type="reset">Reset</button>
+                <div class="form-group">
+                <label for="first_lastname">NOMBRE Y APELLIDO: </label><input type="text" name="first_lastname" class="form-control" placeholder="Nombre y apellido..">
+                </div>
+                
+                <div class="form-group">
+                <label for="tel">TELEFONO: </label><input type="tel" name="tel" class="form-control" placeholder="Telefono.." >
+                </div>
+                
+                <div class="form-group">
+                <label for="city">CIUDAD: </label><input type="text" name="city" class="form-control" placeholder="Ciudad..">
+                </div>
+                
+                <div class="form-group">
+                <label for="email">E-MAIL: </label><input type="email" name="email" class="form-control" placeholder="Email..">
+                </div>
+
+                <div class="form-group">
+                <label for="comments">TU CONSULTA: </label>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Escribinos tu consulto aqui..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" name="submit" class="submit-button">Enviar</button>
+                </div>                
+                
+                
             </form>
+            </div>
+
         </div>
-        <p>Si usted hace click en el boton "enviar", la informacion sera enviada a la pagina "show_data.html".</p>
+       
         
     </main>
-    <footer id="footer_form">
+    
+    <footer id="footer_ind">
         <a class="redsoc" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <a class="redsoc" href="https://www.facebook.com/profile.php?id=100068077059952" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a class="redsoc" href="https://www.whatsapp.com" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         <a class="redsoc" href="https://www.instagram.com/lgt_performance" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a class="redsoc" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         
-
+    <br>
     <h3>GRUPO2 - Performance</h3>
     <div>Kennedy 1014, El Talar, Buenos Aires, CP 1618<br>
         Lunes a Viernes de 8:30hs a 12:30hs y de <br>
