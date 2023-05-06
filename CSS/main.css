@@ -1,0 +1,174 @@
+/*reset css*/
+/*html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table {border-collapse: collapse; border-spacing: 0;}
+td, th, caption { font-weight: normal; text-align: left;}
+img, fielset {border: 0;}
+ol {padding-left: 1.4em;list-style: decimal;}
+ul {padding-left: 1.4em;list-style: aquare;}
+q:before, q:after {content:'';}
+/* fin css reset */
+
+/*@font-face {
+    font-family: 'AlphaWomanHair';
+    src:url('AlphaWomanHair.ttf.woff') format('woff'),
+        url('AlphaWomanHair.ttf.svg#AlphaWomanHair') format('svg'),
+        url('AlphaWomanHair.ttf.eot'),
+        url('AlphaWomanHair.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+#div_ind{
+    /*background-image: url(../imagenes/tablerohd3.jpg);*/
+    /*background: var(--color-black);*/
+    background-image: linear-gradient(
+      115deg,
+      rgba(11, 11, 11, 0.984),
+      rgba(34, 34, 38, 0.766)
+    ), url(../imagenes/tablerohd3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+    margin-bottom: -20px;
+    min-height: 550px;    
+}
+
+#div_about{
+    background-image: linear-gradient(
+      115deg,
+      rgba(11, 11, 11, 0.984),
+      rgba(34, 34, 38, 0.766)
+    ), url(../imagenes/tablerohd3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+    margin-bottom: -20px;
+    min-height: 550px;
+}
+
+#nav_ind a{
+    background-color: black;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#nav_ind{
+    background-color: rgba(28, 25, 25, 0.96);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.nav{
+    margin-right: 15px;
+}
+
+main h1{
+    color:gold;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+main h2{
+    color:#fffffc;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+main h4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#h3_serv{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#p_serv{
+    text-align: center;
+}
+
+main p{
+    color:#fffffc;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 10px;  
+}
+
+label{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#form{
+    margin-left: 250px;
+}
+
+footer{
+    background-color: rgba(28, 25, 25, 0.96);
+    padding-top: 25px;
+    color: gray;
+}
+
+footer a{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+footer h3{
+    text-align: left;
+    margin-left: 20px;
+    color: gold;
+}
+
+footer div{
+    text-align: left;
+    margin-left: 20px;
+}
+#footer_ind{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#footer_about{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#img_about{
+    padding-left: 10px;
+}
+
+#footer_form{
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+}
+
+#iframe{
+   padding-left: 585px;
+}
