@@ -26,9 +26,10 @@ q:before, q:after {content:'';}
 
 #imghead{
     width: 70px;
-    padding: 15px;
-    Transform: translate (10px);
-    Animation: float 7s ease-out infinite;
+    padding: 10px;
+    float: left;
+    Transform: translate (0px);
+    Animation: float 6s linear infinite;
 
   }
   
@@ -37,7 +38,7 @@ q:before, q:after {content:'';}
             Transform: translateY (0px);
       }
       50%{
-            Transform: translateY (100px);
+            Transform: translateY (-30px);
       }
       100%{
             Transform: translateY (0px);
