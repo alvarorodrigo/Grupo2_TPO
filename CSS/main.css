@@ -24,6 +24,27 @@ q:before, q:after {content:'';}
     font-style: normal;
 }*/
 
+#imghead{
+    width: 70px;
+    padding: 15px;
+    Transform: translate (10px);
+    Animation: float 7s ease-out infinite;
+
+  }
+  
+  @keyframes float {
+      0%{
+            Transform: translateY (0px);
+      }
+      50%{
+            Transform: translateY (100px);
+      }
+      100%{
+            Transform: translateY (0px);
+      }
+  
+  }
+
 #div_ind{
     /*background-image: url(../imagenes/tablerohd3.jpg);*/
     /*background: var(--color-black);*/
