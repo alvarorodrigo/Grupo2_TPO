@@ -24,12 +24,11 @@ q:before, q:after {content:'';}
     font-style: normal;
 }*/
 
-#imghead{
-    width: 70px;
-    padding: 10px;
-    float: left;
+#nav_img{
+    width: 50px;
+    padding: 1px;
     Transform: translate (0px);
-    Animation: float 6s linear infinite;
+    Animation: float 6s ease-out infinite;
 
   }
   
@@ -38,7 +37,7 @@ q:before, q:after {content:'';}
             Transform: translateY (0px);
       }
       50%{
-            Transform: translateY (-30px);
+            Transform: translateY (-60px);
       }
       100%{
             Transform: translateY (0px);
@@ -76,7 +75,7 @@ q:before, q:after {content:'';}
 }
 
 #img_about{
-    padding-left: 15rem;
+    padding-left: 50px;
 }
 
 #nav_ind a{
