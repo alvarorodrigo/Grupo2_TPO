@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+    margin: 0 3px;
+    border-radius: 10px;    
+}
+
+.card {
+    text-align: center;
+}
+
+.card p {
+    font-size: 13px;
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+    text-transform: uppercase;
+
+}
+
+.logo{
+    background-color: rgb(33, 32, 32);
+       
+}
+
+.movie {
+    width: 100px;
+    margin: 0 15px;
+    padding: 1px;
+    transform: translate(0px);
+    animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

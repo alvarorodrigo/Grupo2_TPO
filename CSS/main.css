@@ -23,28 +23,6 @@ q:before, q:after {content:'';}
     font-weight: normal;
     font-style: normal;
 }*/
-
-#nav_img{
-    width: 50px;
-    padding: 1px;
-    Transform: translate (0px);
-    Animation: float 6s ease-out infinite;
-
-  }
-  
-  @keyframes float {
-      0%{
-            Transform: translateY (0px);
-      }
-      50%{
-            Transform: translateY (-60px);
-      }
-      100%{
-            Transform: translateY (0px);
-      }
-  
-  }
-
 #div_ind{
     /*background-image: url(../imagenes/tablerohd3.jpg);*/
     /*background: var(--color-black);*/
