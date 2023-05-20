@@ -1,6 +1,6 @@
 .contenedor {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1266px;
 	margin: auto;
 	padding: 40px 0;
     
@@ -31,25 +31,31 @@
 
 .card {
 	border-radius: 10px;
-	min-height: 200px;
+	min-height: 150px;
 	font-weight: bold;
-	padding: 20px;
+	padding: 10px;
 	position: relative;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
 
-	/* Flexbox */
-	/* width: calc(33.33% - 20px); */
+	/* Flexbox
+	width: calc(33.33% - 20px);*/
 }
 
-.textos {
-	width: auto;
-    height: auto;    
-    
-
-    
+#textos {
+	color: black;
+	background-color: red;
+	text-align: center;
+	margin-top: 50%;
+	background-image: linear-gradient(
+		115deg,
+		rgba(11, 11, 11, 0.984),
+		rgba(34, 34, 38, 0.766)
+	  ), url(../imagenes/tablerohd3.jpg);
 	
+	
+	  
 	/* Flebox
 	display: flex;
 	flex-direction: column;
@@ -86,11 +92,11 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1266px) {
 	
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1266px) {
 	.contenedor-conciertos {
 	
 		/* Grid */
@@ -102,6 +108,6 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 360px) {
 
 }

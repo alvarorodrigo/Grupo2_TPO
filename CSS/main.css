@@ -120,7 +120,7 @@ main h2{
     color:#fffffc;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align: center;
     margin-left: 10px;
     padding-top: 20px;
 }
@@ -151,8 +151,8 @@ main p{
     color:#fffffc;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    margin-left: 10px;  
+    text-align: center;
+    padding: 15px;  
 }
 
 
@@ -237,7 +237,11 @@ input{
 
 
 footer{
-    background-color: rgba(28, 25, 25, 0.96);    
+    background-image: linear-gradient(
+        115deg,
+        rgba(11, 11, 11, 0.984),
+        rgba(34, 34, 38, 0.766)
+      ), url(../imagenes/tablerohd3.jpg);   
     color: gray;
     width: 100%;
     max-height: none;
@@ -300,7 +304,9 @@ footer p{
 }
 
 #iframe{
-   padding: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   
 }
 
 #ubicenter{
