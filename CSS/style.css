@@ -44,7 +44,7 @@
 }
 
 #textos {
-	color: black;
+	color: rgb(146, 145, 145);
 	background-color: red;
 	text-align: center;
 	margin-top: 50%;
@@ -102,6 +102,17 @@
 		/* Grid */
 		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
+	}
+	.nav{
+		/* Flebox*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		/*grid-template-columns: repeat(2, 1fr);
+		gap: 10px;*/
+		/* Grid 
+		display: grid;
+		grid-template-rows: 4fr auto;*/
 	}
 	.banner{
 		display: none;

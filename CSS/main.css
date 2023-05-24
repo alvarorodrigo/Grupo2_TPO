@@ -38,6 +38,10 @@ q:before, q:after {content:'';}
        
 }
 
+#contacto{
+    margin-top: 10px;
+}
+
 #div_about{
     background-image: linear-gradient(
       115deg,
@@ -219,6 +223,7 @@ input{
     padding: 0.625rem;
     resize: vertical;
     background-color:  rgba(28, 25, 25, 0.96);
+    color: white;
     border: 1px solid #ced4da;
   }  
 

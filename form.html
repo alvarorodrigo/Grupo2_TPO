@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/4879e652c8.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/webfonts" crossorigin="webfonts"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="imagenes/icon.png">
     <title>GRUPO 2 Performance, Servicio mecánico</title>
 </head>
@@ -22,10 +23,10 @@
     </header>
     <main>
         <div id="div_ind">
-            <h1>CONTACTO</h1>
+            <h1 id="contacto">CONTACTO</h1>
 
             <div class="form">
-            <form id=form action="show_data.html" target="_blank">
+            <form id=form action="" target="_blank" method="POST">
                 <div class="form-group">
                 <label for="first_lastname">NOMBRE Y APELLIDO: </label><input type="text" name="first_lastname" class="form-control" placeholder="Nombre y apellido..">
                 </div>
@@ -53,6 +54,7 @@
                 
                 
             </form>
+            <a href="mailto:armarquez78@gmail.com" id="referencia"></a>
             </div>
 
         </div>
@@ -82,5 +84,22 @@
         Copyright ® 2023 
     </p>
     </footer>
+
+    <script>
+        const $form = document.querySelector('#form')
+        const $buttonMailto = document.querySelector('#referencia')
+
+        $form.addEventListener('submit', handleSubmit)
+
+        function handleSubmit(event){
+            event.preventDefault()
+            const form = new FormData(this)
+            $buttonMailto.setAttribute('href', `mailto:armarquez78@gmail.com?subject=nombre ${form.get('first_lastname')}  correo ${form.get('email')}&body=${form.get('comment')}`)
+            $buttonMailto.click()
+        }
+
+
+
+    </script>
 </body>
 </html>
