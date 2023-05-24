@@ -59,7 +59,7 @@ q:before, q:after {content:'';}
     padding-left: 50px;
 }
 
-#nav_ind{
+/* #nav_ind{
     background-color: rgba(11, 9, 9, 0.96);
     padding-bottom: 25px;
     padding-top: 25px;
@@ -109,7 +109,7 @@ q:before, q:after {content:'';}
     
     
 
-}
+} */
 
 main h1{
     color: white;
@@ -157,6 +157,7 @@ main p{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 15px;  
+    margin: 15px;
 }
 
 
@@ -311,7 +312,7 @@ footer p{
 #iframe{
    padding-left: 10px;
    padding-right: 10px;
-   
+      
 }
 
 #ubicenter{
