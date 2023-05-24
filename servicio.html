@@ -12,17 +12,35 @@
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" type="image/png" href="./imagenes/icon.png">
+    <link rel="stylesheet" href="./CSS/navResponsive.css">
 
     <title>GRUPO2 Performance, Servicio mecánico</title>
 </head>
 <body>
     <header>
-        <nav id="nav_ind">
-            <a class="nav" href="index.html" >Home</a>
-            <a class="nav" href="about.html" >Quienes Somos</a>
-            <a class="nav" href="servicio.html" >Qué Hacemos</a>
-            <a class="nav" href="form.html" >Contacto</a>
-        </nav>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+            </script>
+    
+                   
+                <div class="topnav" id="myTopnav">
+                    
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">Quienes somos</a>
+                    <a href="servicio.html">Que hacemos</a>
+                    <a href="form.html">Contacto</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                  
+                </div> 
+                
+              </div>
         
     </header>
     <main>
