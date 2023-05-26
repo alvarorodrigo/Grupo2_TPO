@@ -157,7 +157,29 @@
 
     <script src="./Js/navResponsiveDropdown/navResponsive.js"></script>
 
+    <script>
 
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+        
+            while (x === "" || !isNaN(x)) {
+            if (x === "") {
+                alert("Debe introducir un nombre de la Real Academia Española");
+            } else {
+                alert("El nombre no puede ser un valor numérico");
+            }
+        
+            x = prompt("Ingrese un nombre de la Real Academia Española válido:");
+            }
+        
+            document.forms["myForm"]["fname"].value = x;
+        
+            // Resto del código de validación o acciones adicionales
+        
+            return true;
+        }
+
+    </script>
 
 </body>
 </html>

@@ -1,31 +1,37 @@
+const form = document.querySelector("#form")
 
+function mandarEmail(nombre, email){
+    Email.send({
+        //SecureToken : "a4bfd91d-0c12-4ba1-ba96-1fe9d648d39d",
+        To : email,
+        From : "sssssssss@gmail.com",
+        Subject : "Bienvenido!",
+        Body : `Hola ${nombre}, gracias por comentario`
+    }).then(
+        message => alert(message)
+    );
+}
 
-// function validateForm() {
+function mostraValores(nombre,telefono,email){
+    form.className="oculto"
+    document.querySelector("#nombre-mensaje").innerHTML = `Nombre registrado: ${nombre}`
+    document.querySelector("#telefono-mensaje").innerHTML= `Telefono registrado: ${telefono}`
+    document.querySelector("#email-mensaje").innerHTML = `Email registrado: ${email}`
+    document.querySelector("#mensaje-exito").className=""
+}
 
-//     let nombre = document.getElementById("nombre")
-//     let x = document.forms["myForm"]["fname"].value;
-//     if (nombre === "banana") {
-//       alert("Debe introducir un nombre de la real academia española");
-//       return false;
-//     }
-//   }
+function tomarValoresFormulario(event){
+    let nombre = form.nombre.value
+    let telefono = form.telefono.value
+    let email = form.email.value
+    console.log(nombre)
+    console.log(telefono)
+    console.log(email)
+    event.preventDefault()
+    mostraValores(nombre,telefono,email)
+    mandarEmail(nombre, email)
+}
 
+form.onsubmit = tomarValoresFormulario
 
-function validateForm() {
-     let x = document.forms["myForm"]["fname"].value;
-  
-     if (x === "") {
-       alert("Debe introducir un nombre de la Real Academia Española");
-       return false;
-     }
-  
-    if (!isNaN(x)) {
-       alert("El nombre no puede ser un valor numérico");       return false;
-     }
-  
-     // Resto del código de validación o acciones adicionales
-  
-    return true;
-   }
-
-console.log("esto esta linkeado bien")
+console.log("esto estas linkeado bien")
