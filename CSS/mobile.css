@@ -3,3 +3,21 @@
     padding: 0;
 }
 
+p.pServicio{
+    font-size:28px;
+    color: whitesmoke;
+}
+
+.contenedor-conciertos {
+	/* Flexbox */
+	/* width: 70%;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	gap: 10px;
+}
