@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4879e652c8.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/webfonts" crossorigin="webfonts"></script>
+    
 
 
 
@@ -14,11 +15,25 @@
     <link rel="icon" type="image/png" href="./imagenes/icon.png">
     <link rel="stylesheet" href="./CSS/navResponsive.css">
 
+    <link rel="stylesheet"
+      href="./CSS/mobile.css"
+      media="(max-width: 640px)">
+
+    <link rel="stylesheet"
+      href="./CSS/tablet.css"
+      media="(min-width: 640px) and (max-width: 1280px)">
+
+    <link rel="stylesheet"
+      href="./CSS/main.css"
+      media="(min-width: 1280px)">
+
+
+
     <title>GRUPO2 Performance, Servicio mecánico</title>
 </head>
 <body>
     <header>
-        <script>
+        <!-- <script>
             function myFunction() {
                 let x = document.getElementById("myTopnav");
                 if (x.className === "topnav") {
@@ -27,7 +42,7 @@
                   x.className = "topnav";
                 }
               }
-            </script>
+            </script> -->
     
                    
                 <div class="topnav" id="myTopnav">
@@ -82,7 +97,7 @@
                     
                     <div class="card" style="background-image: url('./imagenes/auto6.jpg')">
                         <div>                        
-                            <p class="pServicio" id="textos">Armado de autos de competición</p>
+                            <p class="pServicio" id="textos">Preparación</p>
                         </div>
                     </div>
                 </div>                
@@ -139,5 +154,32 @@
         Copyright ® 2023 
     </p>
     </footer>
+
+    <script src="./Js/navResponsiveDropdown/navResponsive.js"></script>
+
+    <script>
+
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+        
+            while (x === "" || !isNaN(x)) {
+            if (x === "") {
+                alert("Debe introducir un nombre de la Real Academia Española");
+            } else {
+                alert("El nombre no puede ser un valor numérico");
+            }
+        
+            x = prompt("Ingrese un nombre de la Real Academia Española válido:");
+            }
+        
+            document.forms["myForm"]["fname"].value = x;
+        
+            // Resto del código de validación o acciones adicionales
+        
+            return true;
+        }
+
+    </script>
+
 </body>
 </html>

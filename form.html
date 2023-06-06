@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4879e652c8.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/webfonts" crossorigin="webfonts"></script>
+    
 
 
     <link rel="stylesheet" href="./CSS/main.css">
@@ -13,11 +14,23 @@
     <link rel="icon" type="image/png" href="./imagenes/icon.png">
     <link rel="stylesheet" href="./CSS/navResponsive.css">
 
+    <link rel="stylesheet"
+    href="./CSS/mobile.css"
+    media="(max-width: 640px)">
+
+  <link rel="stylesheet"
+    href="./CSS/tablet.css"
+    media="(min-width: 640px) and (max-width: 1280px)">
+
+  <link rel="stylesheet"
+    href="./CSS/main.css"
+    media="(min-width: 1280px)">
+
     <title>GRUPO 2 Performance, Servicio mecánico</title>
 </head>
 <body>
     <header>
-        <script>
+        <!-- <script>
             function myFunction() {
                 let x = document.getElementById("myTopnav");
                 if (x.className === "topnav") {
@@ -26,7 +39,7 @@
                   x.className = "topnav";
                 }
               }
-            </script>
+            </script> -->
     
                    
                 <div class="topnav" id="myTopnav">
@@ -47,35 +60,41 @@
             <h1 id="contacto">CONTACTO</h1>
 
             <div class="form">
-            <form id=form action="" target="_blank" method="POST">
+            <form name="myForm" id=form action="" target="_blank" method="get">
                 <div class="form-group">
-                <label for="first_lastname">NOMBRE Y APELLIDO: </label><input type="text" name="first_lastname" class="form-control" placeholder="Nombre y apellido..">
+                <label for="first_lastname">NOMBRE Y APELLIDO: </label><input type="text" id="nombre" name="fname" class="form-control" placeholder="Nombre y apellido.." >
                 </div>
                 
                 <div class="form-group">
-                <label for="tel">TELEFONO: </label><input type="tel" name="tel" class="form-control" placeholder="Telefono.." >
+                <label for="tel">TELEFONO: </label><input type="tel" name="tel" class="form-control" placeholder="Telefono.." required>
                 </div>
                 
                 <div class="form-group">
-                <label for="city">CIUDAD: </label><input type="text" name="city" class="form-control" placeholder="Ciudad..">
+                <label for="city">CIUDAD: </label><input type="text" name="city" class="form-control" placeholder="Ciudad.." required>
                 </div>
                 
                 <div class="form-group">
-                <label for="email">E-MAIL: </label><input type="email" name="email" class="form-control" placeholder="Email..">
+                <label for="email">E-MAIL: </label><input type="email" name="email" id="email-address" class="form-control" placeholder="Email.." required>
                 </div>
 
                 <div class="form-group">
                 <label for="comments">TU CONSULTA: </label>
-                <textarea id="comments" class="input-textarea" name="comment" placeholder="Escribinos tu consulto aqui..."></textarea>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Escribinos tu consulto aqui..." required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" name="submit" class="submit-button">Enviar</button>
+                    <input type="submit" value="Enviar" id="submit-btn" class="submit-button" />
+                    <!-- <button type="submit" name="submit" class="submit-button">Enviar</button> -->
                 </div>                
                 
                 
             </form>
-            <a href="mailto:armarquez78@gmail.com" id="referencia"></a>
+            
+
+          
+            
+
+            <a href="mailto:armarquez78@gmail.com" id="referencia" style="display: none;"></a>
             </div>
 
         </div>
@@ -106,7 +125,7 @@
     </p>
     </footer>
 
-    <script>
+     <!-- <script>
         const $form = document.querySelector('#form')
         const $buttonMailto = document.querySelector('#referencia')
 
@@ -121,6 +140,15 @@
 
 
 
-    </script>
+    </script>  -->
+
+<script src="./Js/navResponsiveDropdown/navResponsive.js"></script>
+<script src="./Js/IntegracionEmail/IntegracionEmail.js"></script> 
+<script src="./Js/validacionFormulario/validacionFormulario.js"></script>
+
+
 </body>
+
+
+
 </html>

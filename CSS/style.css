@@ -44,8 +44,8 @@
 }
 
 #textos {
-	color: white;
-	background-color: red;
+	/* color: white; */
+	/* background-color: red; */
 	text-align: center;
 	margin-top: 50%;
 	/*background-image: linear-gradient(
@@ -110,7 +110,7 @@
     }
 }
 
-@media screen and (max-width: 1266px) {
+/* @media screen and (max-width: 1266px) {
 	
 }
 
@@ -118,25 +118,25 @@
 	.contenedor-conciertos {
 	
 		/* Grid */
-		grid-template-columns: repeat(2, 1fr);
+		/*grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
 	}
-	.nav{
-		/* Flebox
+	/*.nav{
+		 Flebox
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		grid-template-columns: repeat(2, 1fr);
+		/*grid-template-columns: repeat(2, 1fr);
 		gap: 10px;*/
-		/*Grid*/ 
+		/* Grid 
 		display: grid;
-		grid-template-rows: 4fr auto;
-	}
-	.banner{
+		grid-template-rows: 4fr auto;*/
+	/*}
+	/*.banner{
 		display: none;
 	}
 }
 
 @media screen and (max-width: 360px) {
 
-}
+} */
