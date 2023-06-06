@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" type="image/png" href="./imagenes/icon.png">
     <link rel="stylesheet" href="./CSS/navResponsive.css">
+    <script src="./Js/validacionFormulario/validacionFormulario.js"></script>
 
     <link rel="stylesheet"
     href="./CSS/mobile.css"
@@ -60,41 +61,59 @@
             <h1 id="contacto">CONTACTO</h1>
 
             <div class="form">
-            <form name="myForm" id=form action="" target="_blank" method="get">
+            <form name="myForm" id="form"  >
                 <div class="form-group">
-                <label for="first_lastname">NOMBRE Y APELLIDO: </label><input type="text" id="nombre" name="fname" class="form-control" placeholder="Nombre y apellido.." >
+                <label for="first_lastname">NOMBRE Y APELLIDO: </label><input type="text" id="username" name="username" class="form-control" placeholder="Nombre y apellido.." >
                 </div>
                 
                 <div class="form-group">
-                <label for="tel">TELEFONO: </label><input type="tel" name="tel" class="form-control" placeholder="Telefono.." required>
+                <label for="tel">TELEFONO: </label><input type="tel" name="tel" class="form-control" placeholder="Telefono.." >
                 </div>
                 
                 <div class="form-group">
-                <label for="city">CIUDAD: </label><input type="text" name="city" class="form-control" placeholder="Ciudad.." required>
+                <label for="city">CIUDAD: </label><input type="text" name="city" class="form-control" placeholder="Ciudad.." >
                 </div>
                 
                 <div class="form-group">
-                <label for="email">E-MAIL: </label><input type="email" name="email" id="email-address" class="form-control" placeholder="Email.." required>
+                <label for="email">E-MAIL: </label><input type="email" name="email" id="email-address" class="form-control" placeholder="Email.." >
                 </div>
 
                 <div class="form-group">
                 <label for="comments">TU CONSULTA: </label>
-                <textarea id="comments" class="input-textarea" name="comment" placeholder="Escribinos tu consulto aqui..." required></textarea>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Escribinos tu consulto aqui..." ></textarea>
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" value="Enviar" id="submit-btn" class="submit-button" />
-                    <!-- <button type="submit" name="submit" class="submit-button">Enviar</button> -->
+                    <!-- <input type="submit" value="Enviar" id="btnenviar" class="submit-button" /> -->
+                     <!-- <button type="submit" name="submit" class="submit-button">Enviar</button>   -->
+                   <input type="submit" name="referencia" value="Submit" id="submit-btn" value="Sign Up" /> 
+                    <!-- <button onclick="sendMail(); return false">Send</button> -->
                 </div>                
                 
                 
             </form>
+
+
+                <!-- <input id="btn-enviar" type="number" min="100">
+                <button onclick="myFunction()">OK</button>
+
+                <p id="demo"></p>
+
+                <script>
+                    function myFunction() {
+                        let text = "Value OK";
+                        if (document.getElementById("btn-enviar").validity.rangeUnderflow) {
+                        text = "Value too small";
+                
+                    }
+                }
+               </script> -->
             
 
           
             
 
-            <a href="mailto:armarquez78@gmail.com" id="referencia" style="display: none;"></a>
+            <!-- <a href="mailto:armarquez78@gmail.com" id="referencia" style="display: none;"></a> -->
             </div>
 
         </div>
@@ -142,9 +161,11 @@
 
     </script>  -->
 
+<!-- <script src="./Js/validacionFormulario/validacionFormulario.js"></script> -->
 <script src="./Js/navResponsiveDropdown/navResponsive.js"></script>
-<script src="./Js/IntegracionEmail/IntegracionEmail.js"></script> 
+ <!-- <script src="./Js/IntegracionEmail/IntegracionEmail.js"></script>   -->
 <script src="./Js/validacionFormulario/validacionFormulario.js"></script>
+
 
 
 </body>
