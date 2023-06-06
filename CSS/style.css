@@ -122,15 +122,15 @@
 		gap: 10px;
 	}
 	.nav{
-		/* Flebox*/
+		/* Flebox
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		/*grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;*/
-		/* Grid 
+		/*Grid*/ 
 		display: grid;
-		grid-template-rows: 4fr auto;*/
+		grid-template-rows: 4fr auto;
 	}
 	.banner{
 		display: none;
