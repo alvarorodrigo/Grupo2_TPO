@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" type="image/png" href="./imagenes/icon.png">
     <link rel="stylesheet" href="./CSS/navResponsive.css">
-    <script src="./Js/validacionFormulario/validacionFormulario.js"></script>
+    
 
     <link rel="stylesheet"
     href="./CSS/mobile.css"
     media="(max-width: 640px)">
 
-  <link rel="stylesheet"
+    <link rel="stylesheet"
     href="./CSS/tablet.css"
     media="(min-width: 640px) and (max-width: 1280px)">
 
-  <link rel="stylesheet"
+    <link rel="stylesheet"
     href="./CSS/main.css"
     media="(min-width: 1280px)">
 
@@ -31,16 +31,7 @@
 </head>
 <body>
     <header>
-        <!-- <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                  x.className += " responsive";
-                } else {
-                  x.className = "topnav";
-                }
-              }
-            </script> -->
+       
     
                    
                 <div class="topnav" id="myTopnav">
@@ -67,15 +58,15 @@
                 </div>
                 
                 <div class="form-group">
-                <label for="tel">TELEFONO: </label><input type="tel" name="tel" class="form-control" placeholder="Telefono.." >
+                <label for="tel">TELEFONO: </label><input type="tel" id="telefono" name="tel" class="form-control" placeholder="Telefono.." >
                 </div>
                 
                 <div class="form-group">
-                <label for="city">CIUDAD: </label><input type="text" name="city" class="form-control" placeholder="Ciudad.." >
+                <label for="city">CIUDAD: </label><input type="text" id="ciudad" name="city" class="form-control" placeholder="Ciudad.." >
                 </div>
                 
                 <div class="form-group">
-                <label for="email">E-MAIL: </label><input type="email" name="email" id="email-address" class="form-control" placeholder="Email.." >
+                <label for="email">E-MAIL: </label><input type="email" id="email" name="email" class="form-control" placeholder="Email.." >
                 </div>
 
                 <div class="form-group">
@@ -84,36 +75,21 @@
                 </div>
 
                 <div class="form-group">
-                    <!-- <input type="submit" value="Enviar" id="btnenviar" class="submit-button" /> -->
-                     <!-- <button type="submit" name="submit" class="submit-button">Enviar</button>   -->
-                   <input type="submit" name="referencia" value="Submit" id="submit-btn" value="Sign Up" /> 
-                    <!-- <button onclick="sendMail(); return false">Send</button> -->
+                    
+                    <button type="submit" name="submit" class="submit-button">Enviar</button>
+                    <p class="warnings" id="warnings"></p>
+                  
                 </div>                
                 
                 
             </form>
 
-
-                <!-- <input id="btn-enviar" type="number" min="100">
-                <button onclick="myFunction()">OK</button>
-
-                <p id="demo"></p>
-
-                <script>
-                    function myFunction() {
-                        let text = "Value OK";
-                        if (document.getElementById("btn-enviar").validity.rangeUnderflow) {
-                        text = "Value too small";
-                
-                    }
-                }
-               </script> -->
             
 
           
             
 
-            <!-- <a href="mailto:armarquez78@gmail.com" id="referencia" style="display: none;"></a> -->
+            <a href="mailto:armarquez78@gmail.com" id="referencia" style="display: none;"></a>
             </div>
 
         </div>
@@ -144,26 +120,10 @@
     </p>
     </footer>
 
-     <!-- <script>
-        const $form = document.querySelector('#form')
-        const $buttonMailto = document.querySelector('#referencia')
-
-        $form.addEventListener('submit', handleSubmit)
-
-        function handleSubmit(event){
-            event.preventDefault()
-            const form = new FormData(this)
-            $buttonMailto.setAttribute('href', `mailto:armarquez78@gmail.com?subject=nombre ${form.get('first_lastname')}  correo ${form.get('email')}&body=${form.get('comment')}`)
-            $buttonMailto.click()
-        }
 
 
 
-    </script>  -->
-
-<!-- <script src="./Js/validacionFormulario/validacionFormulario.js"></script> -->
 <script src="./Js/navResponsiveDropdown/navResponsive.js"></script>
- <!-- <script src="./Js/IntegracionEmail/IntegracionEmail.js"></script>   -->
 <script src="./Js/validacionFormulario/validacionFormulario.js"></script>
 
 
