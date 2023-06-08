@@ -138,6 +138,7 @@ main h4{
 
 #video{
     margin-top: 10px;
+    
 }
 
 #h3_serv{
@@ -226,15 +227,7 @@ input{
     background-color:  rgba(28, 25, 25, 0.96);
     color: white;
     border: 1px solid #ced4da;
-  }
-  
-.warnings{
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: brown;
-    padding-top: 20px;
-}  
+  }  
 
 .submit-button {
     display: block;
