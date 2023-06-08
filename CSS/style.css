@@ -1,0 +1,142 @@
+.contenedor {
+	width: 100%;
+	max-width: 1266px;
+	margin: auto;
+	padding: 40px 0;
+    
+
+	/* Flexbox */
+	/* display: flex;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: 3fr;
+	gap: 20px;
+}
+
+.contenedor-conciertos {
+	/* Flexbox */
+	/* width: 70%;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 150px;
+	font-weight: bold;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	/* Flexbox
+	width: calc(33.33% - 20px);*/
+}
+
+#textos {
+	/* color: white; */
+	/* background-color: red; */
+	text-align: center;
+	margin-top: 50%;
+	/*background-image: linear-gradient(
+		115deg,
+		rgba(11, 11, 11, 0.984),
+		rgba(34, 34, 38, 0.766)
+	  ), url(../imagenes/tablerohd3.jpg);*/
+	  background-image: linear-gradient(
+		115deg,
+		rgba(11, 11, 11, 0.584),
+		rgba(34, 34, 38, 0.648)
+	  ), url(../imagenes/tablerohd3.jpg);
+	opacity: 0.8;
+	
+	
+	  
+	/* Flebox
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;*/
+
+	/* Grid 
+	display: grid;
+	grid-template-rows: 1fr auto;*/
+}
+
+#textos:hover{
+	background-image: linear-gradient(
+		115deg,
+		rgba(11, 11, 11, 0.984),
+		rgba(34, 34, 38, 0.766)
+	  ), url(../imagenes/tablerohd3.jpg);
+}
+
+.pServicio{
+	opacity:1.0;
+	color: white;
+}
+
+.logo{
+    background-color: rgb(33, 32, 32);
+       
+}
+
+.movie {
+    width: 100px;
+    margin: 0 15px;
+    padding: 1px;
+    transform: translate(0px);
+    animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* @media screen and (max-width: 1266px) {
+	
+}
+
+@media screen and (max-width: 1266px) {
+	.contenedor-conciertos {
+	
+		/* Grid */
+		/*grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+	/*.nav{
+		 Flebox
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		/*grid-template-columns: repeat(2, 1fr);
+		gap: 10px;*/
+		/* Grid 
+		display: grid;
+		grid-template-rows: 4fr auto;*/
+	/*}
+	/*.banner{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+} */
